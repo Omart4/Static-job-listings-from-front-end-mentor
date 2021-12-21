@@ -1,0 +1,123 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    :root{
+        --Filters:hsl(180, 100%, 93%);
+        --Background:hsl(180, 52%, 96%);
+        --DGrayCyan:hsl(180, 8%, 52%);
+        --VDCyan:hsl(180, 14%, 20%);
+        --Noto: 'Noto Sans', sans-serif;
+        --DesaturatedCyan:hsl(180, 29%, 50%);
+        --white: rgb(255,255,255);
+        --black:rgb(0,0,0);
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--Noto);
+    }
+    .bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 800px;
+        height: 130px;
+        padding: 5px 15px; 
+        border-radius: 5px;
+        box-shadow: 0 0 10px;
+        background-color: var(--white);
+    }
+    .left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name-tags{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: 275px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .company{
+        font-weight: 700;
+        color: var(--DesaturatedCyan);
+        margin-right: 20px;
+    }
+    .NEW{
+        color: var(--white);
+        background-color: var(--DesaturatedCyan);
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+    .FEAT{
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 25px;
+        padding: 5px 10px;
+
+    }
+    .Title{
+        margin: 0;
+        font-weight: bold;
+        color: var(--black);
+        font-size: 20px;
+    }
+    .time{
+        color: var(--DGrayCyan);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 300px;
+    }
+    .tech{
+        background-color: var(--Filters);
+        color: var(--DesaturatedCyan);
+        border-radius: 5px;
+        padding: 6px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+</style>
+
+<div class="bar">
+    <div class="left">
+        <div id="logo">
+            <img src="./images/photosnap.svg" alt="">
+        </div>
+        <div class="details">
+            <p class="name-tags">
+                <span class="company">Photosnap</span>
+                <span class="NEW">NEW!</span>
+                <span class="FEAT">FEATURED</span>
+            </p>
+            <p class="Title">
+                Senior Frontend Developer
+            </p>
+            <span class="time"><span class="date">1d ago</span>  .  <span class="type">Full Time</span>  .  <span class="location">USA only</span></span>
+        </div>
+    </div>
+    <div class="right">
+        <span class="tech">Frontend</span>
+        <span class="tech">Senior</span>
+        <span class="tech">HTML</span>
+        <span class="tech">CSS</span>
+        <span class="tech">JavaScript</span>
+    </div>
+</div>
