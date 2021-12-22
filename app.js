@@ -186,14 +186,14 @@ const createBars = ()=>{
         New.textContent = 'NEW!'
         New.style.display = 'none';
         if(i.new){
-            New.style.display = 'block'
+          New.style.display = 'block'
         } 
         const Feat = document.createElement('span');
         Feat.className = 'FEAT'
         Feat.innerText = 'FEATURED'
         Feat.style.display = 'none'
         if(i.featured){
-            Feat.style.display = 'block'
+          Feat.style.display = 'block'
         }
         nameTags.appendChild(company)
         nameTags.appendChild(New)
@@ -263,4 +263,12 @@ const createBars = ()=>{
         main.appendChild(bar) 
     })
 }
-createBars()  
+createBars()
+
+const bars = document.querySelectorAll('.bar');
+
+bars.forEach(bar=>{
+  bar.addEventListener('click',function(e){
+    this.classList.toggle('active')
+  })
+})
